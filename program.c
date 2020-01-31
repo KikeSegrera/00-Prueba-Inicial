@@ -3,15 +3,19 @@
 #include <stdio.h> //Standard input / output
 
 int main() {
-    float a = 0;
-    float b = 0;
+    float args;
+    float total;
+    int i = 0;
 
-    scanf("%f%*c", &a);
-    scanf("%f%*c", &b);
+    char newline;
+    do{
+        float temp; 
+        args = scanf( "%f%c", &temp, &newline );
+        if( args > 0 )
+            total += temp;
+    } while( newline != '\n' );
 
-    float result = a + b;
-
-    printf("%f", result);
+    printf("%f", total);
 
     return 0;
 }
