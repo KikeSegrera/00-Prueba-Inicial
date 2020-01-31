@@ -3,17 +3,15 @@
 #include <stdio.h> //Standard input / output
 
 int main() {
-    float args;
+    int args;
     float total;
-    int i = 0;
+    float temp;
 
-    char newline;
     do{
-        float temp; 
-        args = scanf( "%f%c", &temp, &newline );
-        if( args > 0 )
+        args = scanf("%f", &temp);
+        if(args > 0)
             total += temp;
-    } while( newline != '\n' );
+    } while(args != -1);
 
     printf("%f", total);
 
