@@ -13,7 +13,7 @@ int main() {
             total += temp;
     } while(args != -1);
 
-    printf("%f", total);
+    printf("%g", total);
 
     return 0;
 }
