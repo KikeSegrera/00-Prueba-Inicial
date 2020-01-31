@@ -3,15 +3,15 @@
 #include <stdio.h> //Standard input / output
 
 int main() {
-    int a = 0;
-    int b = 0;
+    float a = 0;
+    float b = 0;
 
-    scanf("%i%*c", &a);
-    scanf("%i%*c", &b);
+    scanf("%f%*c", &a);
+    scanf("%f%*c", &b);
 
-    int result = a + b;
+    float result = a + b;
 
-    printf("%i", result);
+    printf("%f", result);
 
     return 0;
 }
